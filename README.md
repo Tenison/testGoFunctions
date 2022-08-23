@@ -10,3 +10,9 @@
 ```cmd
     go run main.go
 ```
+
+### to run automated tests on all functions first
+```cmd
+    make test
+```
+
