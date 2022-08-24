@@ -5,7 +5,6 @@ import "fmt"
 func ConvertStringToByteArray(input string) []byte {
 	var series []byte = []byte(input)
 
-	//fmt.Println(series)
 	return series
 }
 
@@ -14,7 +13,6 @@ func FirstStringCharater(input string) string {
 
 	firstCharater := string(series[0])
 
-	//fmt.Println(firstCharater)
 	return firstCharater
 }
 
