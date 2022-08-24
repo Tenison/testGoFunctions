@@ -1,21 +1,22 @@
-## To Test functionationality found in Packages : 
-### Every package is functionationality I want to test
-### Read through the packages and import the package you want to test into the main.go file
-### implement the functions you want to test Eg: stringCharaters.ConvertStringToByteArray("hello")
+#### To Test functionationality found in Packages : 
+#### Every package is functionationality I want to test
+#### Read through the packages and import the package you want to test into the main.go file
+- To implement the functions you want to test Eg: stringCharaters.ConvertStringToByteArray("hello")
 ```
     //Print to see results
     fmt.Println("Result is ", stringCharaters.ConvertStringToByteArray("hello"))
 ```
-### If you have makefile installed
+#### To Test/Run
+- If you have makefile installed
 ```cmd
     make run-test
 ```
-### else
+- else
 ```cmd
     go run main.go
 ```
 
-### to run automated tests on all functions first
+- To run automated tests on all functions first
 ```cmd
     make test
 ```
