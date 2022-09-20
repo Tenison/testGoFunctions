@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"testGoFunc/stringCharaters"
+	"testGoFunc/arrayForBeginners"
 )
 
 func main() {
@@ -10,5 +10,8 @@ func main() {
 	fmt.Println("<<< Your Result will be Printed below >>>")
 	
 	//Test Example here
-	fmt.Println("Result is ",stringCharaters.ReplaceCharater("Hii There!!", 5, "t"))
+	//fmt.Println("Result is ",stringCharaters.ReplaceCharater("Hii There!!", 5, "t"))
+	
+	//Test arrayForBeginners
+	arrayForBeginners.DeclareAndPrint()
 }
