@@ -4,6 +4,9 @@ import (
 	"fmt"
 )
 
+/**
+*
+**/
 
 func DeclareAndPrint(){
 	var newCount [8]int
@@ -11,14 +14,20 @@ func DeclareAndPrint(){
 	newCount[0] = 1
 
 	//using make to arrays
-	newSlice := make([]int, 10)//(type, size, optional = "capacity")
-	newSlice[0] = 5 //doesn't change the size of the array
+	//(type, size, optional = "capacity")
+	newSlice := make([]int, 10)
+	//doesn't change the size of the array
+	newSlice[0] = 5 
 
-	newSliceTwo := make([]int, 10)//using append() and indexing
+	//using append() and indexing
+	newSliceTwo := make([]int, 10)
+	//doesn't change the size of the array
 	newSliceTwo[0] = 12 
-	newSliceTwo = append(newSliceTwo, 5) //inceases the size of the array
+	//newSliceTwo[11] = 12 //THIS WILL RESULT IN AN ERROR, Because array size is 10
+	newSliceTwo = append(newSliceTwo, 5) //inceases the size of the array by appending to the end of the array
 
-	newSliceThree := make([]int, 10, 100)//(type, size, optional = "capacity")
+	//creating an empty array with a capacity of 100 with "make"
+	newSliceThree := make([]int, 0, 100)//(type, size, optional = "capacity")
 	newSliceThree = append(newSliceThree, 5)
 
 
@@ -33,5 +42,5 @@ func DeclareAndPrint(){
 	fmt.Printf("new SliceTwo : %v %v\n", newSliceTwo, cap(newSliceTwo))
 	fmt.Printf("new SliceThree : %v %v\n", newSliceThree, cap(newSliceThree))
 	fmt.Printf("One Name : %v\n", string(names[0]))
-	fmt.Printf("numberSeries : %v", numberSeries)
+	fmt.Printf("numberSeries : %v %v", numberSeries, cap(numberSeries))
 }
