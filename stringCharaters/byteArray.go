@@ -2,6 +2,10 @@ package stringCharaters
 
 import "fmt"
 
+/*
+* ::: bytes, strings, arrays intro
+**/
+
 func ConvertStringToByteArray(input string) []byte {
 	var series []byte = []byte(input)
 
