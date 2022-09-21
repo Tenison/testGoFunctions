@@ -5,8 +5,56 @@ import (
 )
 
 /**
-*
+* Arrays, Slices, loop
 **/
+func ArrayGo(){
+	var firstArray [2]int
+
+	for i,j := 0,1 ; i < 2; i,j = i+1, j+1{// i+1 === i++
+		firstArray[i] = j
+	}
+
+	var secondArray [3]string = [3]string{"Alex", "Osei", "PJ"}
+
+	thirdArray := [...]int{1,2,3}
+
+	var firstNames [3]string = secondArray //creates a copy in a different memory location(not a reference type)
+	
+	//We can't append to arrays because they have a fixed size that does not change
+	//firstNames = append(firstNames, "Yaw")
+	
+	for _,v := range(firstNames) {
+		fmt.Printf("secondArray : %v\n", string(v))
+	}
+
+	fmt.Printf("firstArray : %v\n", firstArray)
+	fmt.Printf("secondArray : %v\n", secondArray)
+	fmt.Printf("thirdArray : %v\n", thirdArray)
+}
+
+func SliceGo(){
+	var firstSlice []int
+
+	for i,j := 0,1 ; i < 2; i,j = i+1, j+1{// i+1 === i++
+		firstSlice[i] = j
+	}
+	
+	//
+	var secondSlice []string = []string{"Alex", "Osei", "PJ"}
+
+	var firstNames []string = secondSlice //References the same memory location(any changes also changes the original Slice)
+	firstNames = append(firstNames, "Yaw")
+
+
+	//
+	thirdSlice := make([]int, 0, 10)
+	thirdSlice = append(thirdSlice, 2,4,6,8,10)
+
+	fmt.Printf("firstArray : %v Capacity : %v Size: %v\n", firstSlice, cap(firstSlice), len(firstSlice))
+	fmt.Printf("Ref Types :: secondSlice : %v\n", secondSlice)
+	fmt.Printf("Ref Types :: firstNames : %v\n", firstNames)
+	fmt.Printf("thirdArray : %v Capacity : %v Size: %v\n", thirdSlice, cap(thirdSlice), len(thirdSlice))
+}
 
 func DeclareAndPrint(){
 	var newCount [8]int
