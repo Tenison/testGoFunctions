@@ -20,4 +20,10 @@
 ```cmd
     make test
 ```
-
+#### To Contribute to this Project 
+- Star Project :)
+- Fork Project 
+- git clone "git url" to local repo
+- git remote -v :: 'To view all upstream branches'
+- git remote add upstream "original project source url" :: 'So you push and pull upstream updates locally'
+- git pull upstream main :: 'Pull upstream main branch updates"
