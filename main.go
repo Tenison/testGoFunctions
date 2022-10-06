@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"testGoFunc/arrayForBeginners"
+	loopsForBeginners "testGoFunc/LoopsForBeginners"
 )
 
 func main() {
@@ -13,5 +13,11 @@ func main() {
 	//fmt.Println("Result is ",stringCharaters.ReplaceCharater("Hii There!!", 5, "t"))
 	
 	//Test arrayForBeginners
-	arrayForBeginners.DeclareAndPrint()
+	//arrayForBeginners.DeclareAndPrint()
+
+	//testing basic loops
+	for _, value := range(loopsForBeginners.BasicLoop()){
+		fmt.Println("count : ", value)
+	}
+
 }
