@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	loopsForBeginners "testGoFunc/LoopsForBeginners"
+	"testGoFunc/loopsForBeginners"
 )
 
 func main() {
@@ -19,5 +19,8 @@ func main() {
 	for _, value := range(loopsForBeginners.BasicLoop()){
 		fmt.Println("count : ", value)
 	}
+	
+	fmt.Println("Values greater than five: ", loopsForBeginners.WhileLoops())
+
 
 }
